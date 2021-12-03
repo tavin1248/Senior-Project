@@ -1,0 +1,19 @@
+<!-- Tavin Ardell
+    000754847
+    "I have neither given nor received unauthorized aid in completing this work, nor have I used someone else's work as my own" -->
+{% extends "learningWebsite/base.html" %}
+ 
+{% block content %}
+    <article class="media content-section">
+        <form method="post" enctype="multipart/form-data" >
+            {% csrf_token %}
+            <input required name = "images" type="file" multiple>
+            <button class="btn btn-primary" type="submit">Upload></button><div></div>
+            {% for image in images %}
+                <img class="rounded-circle article-img" src="{{ image.image.url }}">
+            {% endfor %}
+            
+        
+        </form>
+    </article>
+{% endblock content %}

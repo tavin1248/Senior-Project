@@ -1,0 +1,21 @@
+<!-- Tavin Ardell
+    000754847
+    "I have neither given nor received unauthorized aid in completing this work, nor have I used someone else's work as my own" -->
+
+{% extends "learningWebsite/base.html" %}
+ 
+{% block content %}
+        <article class="media content-section">
+            <form method="post" enctype="multipart/form-data" >
+                
+                <div>
+                    <form method = "post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{form.as_p}}
+                        <button class="btn btn-primary" type="submit">Upload></button><div></div>
+                    </form>
+                </div>
+               
+            </form>
+        </article>
+{% endblock content %}

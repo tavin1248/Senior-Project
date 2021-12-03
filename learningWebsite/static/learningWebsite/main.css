@@ -1,0 +1,107 @@
+/* Tavin Ardell
+    000754847
+    "I have neither given nor received unauthorized aid in completing this work, nor have I used someone else's work as my own" */
+
+
+body {
+    background: #cacaca;
+    color: #1f4e7d;
+    margin-top: 5rem;
+  }
+ 
+  h1, h2, h3, h4, h5, h6 {
+    color: #1f4e7d;
+  }
+ 
+  .navbar-brand {
+    color: #1f4e7d
+  }
+ 
+  ul {
+    margin: 0;
+    color: #1f4e7d
+  }
+ 
+  .bg-steel {
+    background-color: #cacaca;
+  }
+ 
+  .site-header .navbar-nav .nav-link {
+    color: #1f4e7d;
+  }
+ 
+  .site-header .navbar-nav .nav-link:hover {
+    color: #1f4e7d;
+  }
+ 
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+    color: #1f4e7d;
+  }
+ 
+  .content-section {
+    background: #cacaca;
+    padding: 10px 20px;
+    border: 1px solid #1f4e7d;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+ 
+  .article-title {
+    color: #1f4e7d;
+  }
+ 
+  a.article-title:hover {
+    color: #1f4e7d;
+    text-decoration: none;
+  }
+ 
+  .article-content {
+    white-space: pre-line;
+    color: #1f4e7d
+  }
+ 
+  .article-img {
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    border-radius: 3px;
+    border: 1px solid #1f4e7d
+  }
+ 
+  .article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #1f4e7d;
+  }
+ 
+  .article-metadata a:hover {
+    color: #1f4e7d;
+    text-decoration: none;
+  }
+ 
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+ 
+  .form-control {
+    color: #1f4e7d;
+    background: #cacaca;
+    padding: 10px 20px;
+    border: 1px solid #1f4e7d;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+ 
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+ 
+  .account-heading {
+    font-size: 2.5rem;
+  }

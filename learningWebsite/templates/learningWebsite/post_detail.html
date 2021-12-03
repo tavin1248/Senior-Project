@@ -1,0 +1,34 @@
+<!-- Tavin Ardell
+    000754847
+    "I have neither given nor received unauthorized aid in completing this work, nor have I used someone else's work as my own" -->
+
+{% extends "learningWebsite/base.html" %}
+ 
+{% block content %}
+    <article class="media content-section">
+        <img class="rounded-circle article-img" src="{{ object.author.profile.image.url }} ">
+        <div class="media-body">
+            <div class="article-metadata">
+            <a class="mr-2" href="{% url 'user-posts' object.author.username %}">{{ object.author }}</a>
+            <small class="text-muted">{{ object.date_created|date:"F d, Y" }}</small>
+            {% if object.author == user %}
+            <div>
+                <a class="btn btn-outline-secondary btn-sm mt-2 mb-2" href="{% url 'post-update' object.id %}">update</a>
+                <a class="btn btn-outline-danger btn-sm mt-2 mb-2" href="{% url 'post-delete' object.id %}">delete</a>
+            </div>
+            {% endif %}
+            </div>
+            <h2 class="article-title">{{ object.title }}</h2>
+                <div class="container">
+
+                    <a class="form-control mt-4 mb-2" href="{% url 'good-training-image' %}" >Good Part Training Images</a>
+                    <a class="form-control mb-2" href="{% url 'bad-training-image' %}">Defective Part Training Images</a>
+                    <a class="form-control mb-2" href="{% url 'good-validation-image' %}">Good Part Validation Images</a>
+                    <a class="form-control mb-2" href="{% url 'bad-validation-image' %}">Defective Part Validation Images</a>
+                    <a class="form-control mb-2" href="{% url 'good-test-image' %}">Good Part Testing Images</a>
+                    <a class="form-control mb-2" href="{% url 'bad-test-image' %}">Defective Part Testing Images</a>
+                    <a class="form-control mb-2" href="{% url 'train-load' %}">Train</a>
+                </div>
+        </div>
+    </article>
+{% endblock content %}

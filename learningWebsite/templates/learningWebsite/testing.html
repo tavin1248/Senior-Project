@@ -1,0 +1,26 @@
+<!-- Tavin Ardell
+    000754847
+    "I have neither given nor received unauthorized aid in completing this work, nor have I used someone else's work as my own" -->
+
+{% extends "learningWebsite/base.html" %}
+{% load crispy_forms_tags %}
+ 
+{% block content %}
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+ 
+                <h2><a class="article-title" href="#">Test your defect detection model here!</a></h2>
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Profile Info</legend>
+                    {{ form | crispy }}
+                </fieldset>
+           
+            <div class = "form-group">
+                <button class = "btn btn-outline-info" type="submit">Update</button>
+            </div>
+            </div>
+        </div>
+    </article>
+{% endblock content %}

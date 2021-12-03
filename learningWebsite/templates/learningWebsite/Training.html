@@ -1,0 +1,17 @@
+<!-- Tavin Ardell
+    000754847
+    "I have neither given nor received unauthorized aid in completing this work, nor have I used someone else's work as my own" -->
+
+{% extends "learningWebsite/base.html" %}
+ 
+{% block content %}
+    {% csrf_token %}
+        <article class="media content-section">
+            <form method="post" enctype="multipart/form-data" >
+
+                <a class="form-control mt-4 mb-2">Training Complete - Model is Saved</a>
+                <a class="form-control mt-4 mb-2" href = "{% url 'evaluate' %}">Evaluate your model here</a>
+                </h2>
+            </form>
+        </article>
+{% endblock content %}

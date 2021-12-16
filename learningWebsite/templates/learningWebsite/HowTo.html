@@ -1,0 +1,42 @@
+<!-- Tavin Ardell
+    000754847
+    "I have neither given nor received unauthorized aid in completing this work, nor have I used someone else's work as my own" -->
+
+    {% extends "learningWebsite/base.html" %}
+ 
+    {% block content %}
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <div>
+                        <h2><a class="article-title">Welcome to the defect detection website!</a></h2>
+                    </div>
+                </div>
+                    <h3>
+                        <a class="article-content">Steps:</a>
+                    </h3>
+                    <h5>
+                        <a class="article-content">1) Seperate the non defective part images from the non defective part images.</a>
+                    </h5>
+                    <h5>
+                        <a class="article-content">2) Next, Split the defective part images into three categories: defective training images, defective testing images, and defective validation images.</a>
+                    </h5>
+                    <h5>
+                        <a class="article-content">3) Repeat step three with the non defective part images.</a>
+                    </h5>
+                    <h5>
+                        <a class="article-content">4) Create a new project and load all of the images into their respective categories.</a>
+                    </h5>
+                    <h5>
+                        <a class="article-content">5) Click the 'Train' button once all of the images have been uploaded and wait for the model to train.</a>
+                    </h5>
+                    <h5>
+                        <a class="article-content">6) Click the 'Evaluate model' button! The evaluation will show you how accurate and effective your model is at categorizing part defects.</a>
+                    </h5>
+                    <h5>
+                        <a class="article-content">7) Connect a Camera in order to make real time defect detections!</a>
+                    </h5>
+                
+            </div>
+        </article>
+    {% endblock content %}

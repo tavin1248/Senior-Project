@@ -7,10 +7,16 @@
 {% block content %}
         <article class="media content-section">
             <form method="post" enctype="multipart/form-data" >
-                {% csrf_token %}
                 <div>
                     <a class="form-control mt-4 mb-2">Camera Input</a>
-                    <img class="article-img" src="{{ LoadModel.image.url }}">
+                    {% for image in images%}
+                        <img class="img" src="{{ image.image.url }}" width="400" height="400">
+                        <script>
+                            window.setTimeout(function (){
+                                location.href = ''
+                            }, 1000)
+                        </script>
+                    {%endfor%}
                     <a class="form-control mt-4 mb-2">{{ label }} | Score: {{guess}} % Accuracy</a>
                 </div>
                
